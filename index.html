@@ -1,11 +1,136 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
+
+    <meta property="og:url" content="https://andrestsgh.github.io/HTML-CSS-PEC1/"/>
+    <meta property="og:title" content="El iris, ¿el dato biométrico de moda?"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:description"
+        content="El auge de las criptomonedas impulsa a jóvenes a vender su iris para obtenerlas, 
+        planteando el debate sobre la privacidad, regulación y uso de estos datos biométricos."/>
+    <meta property="og:image" content="https://andrestsgh.github.io/HTML-CSS-PEC1/img/iris.jpg"/>
+
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:site" content="@andrests"/>
+    <meta name="twitter:creator" content="@andrests"/>
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="author" content="Núria Bigas Formatjé" />
+    <meta name="description"
+        content="El auge de las criptomonedas impulsa a jóvenes a vender su iris para obtenerlas, 
+        planteando el debate sobre la privacidad, regulación y uso de estos datos biométricos."/>
+   
+    <title>El iris, ¿el dato biométrico de moda? - Noticias UOC</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
+    <!-- las tres siguientes líneas son un truco para obtener elementos semánticos de HTML5 que funcionan en versiones de Internet Explorer antiguas -->
+    <!--[if lt IE 9]>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+    <![endif]-->
 </head>
 <body>
-    Hello World!
+    <!-- Aquí empieza el encabezado principal que se mantendrá en todas las páginas del sitio web -->
+    <header>
+        <div class="container">
+            <img src="img/bit-logo.png" alt="Bit Logo">
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="criptomonedas.html">Criptomonedas</a></li>
+                <li><a href="glosario.html">Glosario</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Aquí está el contenido principal de nuestra página -->
+    <main>
+        <!-- Contiene un artículo -->
+        <article>
+            <h1>El iris, ¿el dato biométrico de moda?</h1>
+            <p>Por Núria Bigas Formatjé / <time datetime="2024-02-27">27/02/24</time></p>
+            <img src="img/iris.jpg" alt="Primer plano de un ojo de color verde iluminado" title="Iris en proceso de ser escaneado con Orb">
+            <p>Vender el iris por veinticinco criptomonedas está de moda entre algunos jóvenes. La empresa <span class="company">Worldcoin</span>, 
+                impulsada por el padre de <abbr title="Chat Generative Pre-trained Transformer">ChatGPT</abbr>, <span class="person">Sam Altman</span>, ha implantado en <span class="country">España</span> unas treinta tiendas en las que 
+                se escanean los ojos a través de un dispositivo llamado Orb. Hacerlo tiene premio; se dan una serie de 
+                <i lang="en">tokens</i> o monedas virtuales a cambio. <q>El principal peligro de facilitar el iris es que 
+                se trata de un dato biométrico que permite la identificación unívoca y puede asociarse con información sensible, 
+                como el estado de salud de una persona</q>, explica <span class="person">Eduard Blasi</span>, profesor colaborador de los Estudios de Derecho 
+                y Ciencia Política de la Universitat Oberta de Catalunya (UOC).</p>
+            <p>Las colas son largas en las ciudades donde <span class="company">Worldcoin</span> tiene presencia y, según la propia empresa, ya son más 
+                de 360.000 los españoles que han vendido su iris. <q>La preocupación viene por la entrega de información privada 
+                que nos identifica. A diferencia de las contraseñas, que se pueden cambiar en caso de problemas, nuestros rasgos 
+                oculares permanecen inalterables</q>, explica <span class="person">Jordi Serra</span>, profesor de los Estudios de Informática, Multimedia y 
+                Telecomunicación de la <abbr title="Universitat Oberta de Catalunya">UOC</abbr> e investigador del grupo de investigación <abbr title="K-riptography and Information Security for Open Networks">KISON</abbr>. El procedimiento de venta es sencillo; 
+                a través del escaneo del iris, se genera un código único denominado <i lang="en">irishash</i> que identifica a cada usuario. 
+                Del mismo modo que la forma de andar o la voz son datos biométricos, el iris es un dato muy estable y se mantiene 
+                intacto, o prácticamente intacto, durante el transcurso de la vida. <q>Si los números que representan nuestros iris 
+                se comprometen o comercializan, nos enfrentamos a un dilema, ya que son inmodificables</q>, advierte <span class="person">Serra</span>.</p>
+            <p>Según <span class="person">Blasi</span>, el uso de este tipo de datos tiene una doble vertiente, positiva y negativa: <q>Son datos muy fiables, 
+                que dan menos errores y falsos positivos, en tratarse de un dato biométrico que se mantiene intacto durante el 
+                transcurso del tiempo. Pero a la vez, en caso de sustracción de esta información (un hackeo, un ciberataque o una 
+                extracción por parte de un tercero no autorizado), este dato no puede ser modificado en un futuro (como podría 
+                hacerse con una contraseña comprometida), y por tanto, el daño que se nos podría ocasionar puede perpetuarse en 
+                el tiempo</q>.</p>
+
+            <section>
+                <h2>Tener un pasaporte de humanidad para distinguirnos de la <abbr title="Inteligencia Artificial">IA</abbr></h2>
+                <p>Según <span class="company">Worldcoin</span>, el objetivo es conseguir registrar el iris de toda la población mundial para que sea más fácil 
+                    poder distinguir si el avatar con quien se habla en Internet es realmente una persona o fruto de la inteligencia 
+                    artificial. Confirmar esta identidad permite tener lo que ellos consideran como un <em>pasaporte de humanidad</em>. La 
+                    semana pasada, el número total de iris capturados en todo el mundo era de 3,6 millones, con registros en 36 países. 
+                    <span class="person">Serra</span> advierte:</p>
+                    <blockquote><p>Si los sistemas que almacenan la información codificada son vulnerables y los ciberdelincuentes 
+                    pueden relacionar los datos guardados con una persona, tendrían la capacidad de suplantar su identidad.</p></blockquote>
+                <p><q>Por eso, el rigor en la custodia por parte de las empresas que procesen esta información es el punto clave. El 
+                    tratamiento de este dato se debe reservar exclusivamente para los casos en los que sea realmente necesario y no 
+                    haya ninguna otra manera menos intrusiva de llegar a la finalidad que se pretende lograr</q>, advierte <span class="person">Blasi</span>. De hecho, 
+                    la Agencia Española de Protección de Datos (AEPD) está analizando cuatro denuncias relacionadas con el tratamiento 
+                    de datos por parte de esta empresa y su símil en <span class="country">Alemania</span>. Otros países como <span class="country">Francia</span>, <span class="country">Argentina</span> o <span class="country">Kenia</span> también lo 
+                    investigan. La empresa se defiende afirmando que el código numérico no está relacionado con una persona, pero hay 
+                    recelo con respecto a la gestión de estos datos personales. <q>Hay dudas, sobre todo con el procesamiento de la imagen. 
+                    No se sabe exactamente cuál es la información que se extrae y si realmente se anonimiza de manera no reversible y 
+                    si se puede garantizar su irreversibilidad en un futuro</q>, explica <span class="person">Blasi</span>, que añade: <q>Por otro lado, tampoco se sabe 
+                    exactamente si se reutilizará esta información en un futuro, si habrá algún uso o interés comercial detrás de todo 
+                    esto más allá del proyecto que proponen</q>.</p>
+            </section>
+
+            <section>
+                <h2>El <span class="cryptocurrency">worldcoin</span> sale ganando</h2>
+                <p>De momento, la criptomoneda <span class="cryptocurrency">worldcoin</span>, la contraprestación que reciben las personas que venden su iris, está subiendo 
+                    de precio. Esta práctica se conoce como consentimiento incentivado. <q>No es contrario a la normativa de protección de 
+                    datos recibir una compensación económica, ya sea un producto o una ventaja, para estimular este consentimiento</q>, 
+                    explica <span class="person">Blasi</span>. Su valor ha pasado de 2,43 euros (de media en los últimos 8 meses) por unidad a principios de febrero, 
+                    a 8,57 euros el pasado jueves. Esto implica que se ha pasado de cobrar 60 euros por dar el iris a recibir 214 por 
+                    vender la criptomoneda.</p>
+                <p>En caso de echarse atrás, existe la posibilidad de recuperar los datos: <q>Con el Reglamento europeo de protección de 
+                    datos en la mano, sí</q>, confirma <span class="person">Blasi</span>, divulgador del canal TechandLaw (premio <abbr title="Agencia Española de Protección de Datos">AEPD</abbr> 2023). <q>Existe y resulta de 
+                    aplicación el principio de extraterritorialidad que asegura que los datos de los europeos viajen con sus derechos, 
+                    es decir, en caso de que <abbr title="Open Artificial Intelligence">OpenAI</abbr> tenga sus centros de procesamiento de datos en <span class="country">Estados Unidos</span>, no debería ser ningún 
+                    impedimento para que los ciudadanos europeos puedan ejercer sus derechos en temas de protección de datos</q>, confirma 
+                    el experto. Así, recuperar los datos es factible, y ejercer el derecho de supresión o el derecho de oposición al 
+                    tratamiento está incluido en la normativa europea de protección de datos. Además, de obliga a las empresas a cumplir 
+                    la norma actual estén donde estén si tratan datos europeos.</p>
+            </section>
+
+            <p><cite>Bigas Formatjé, N. (<time datetime="2024-02-27">27 de febrero de 2024</time>). "El iris, ¿el dato biométrico de moda?". 
+                <a href="https://www.uoc.edu/es/news/2024/iris-dato-biometrico-de-moda-worldcoin" target="_blank">Noticias UOC</a></cite>. 
+                Fotografía de 
+                <a href="https://unsplash.com/@arteum?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash" target="_blank">Arteun.ro</a> 
+                en <a href="https://unsplash.com" target="_blank">Unsplash</a>
+            </p>
+        </article>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>2024 &copy; Andrés Terol Sánchez</p>
+            <p>Asignatura HTML y CSS</p>
+        </div>
+    </footer>
 </body>
 </html>
