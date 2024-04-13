@@ -1,20 +1,97 @@
+:root {
+    --main-color: rgb(36, 36, 36);
+    --contrast-color: rgb(191, 15, 60);
+}
+  
 /* Estilos generales */
-
+html {
+    font-size: 16px;
+  }
+  
 body {
-    font-family: Georgia, 'Times New Roman', serif;
-    color: rgb(36, 36, 36);
+    font-family: Helvetica, Arial, sans-serif;
+    color: var(--main-color);
     margin: 0;
     padding: 0;
+    line-height: 1.6;
 }
 
 .container {
     width: 95%;
     max-width: 850px;
+    margin-left: auto;
     margin: 0 auto;
 }
 
+h1, h2, h3 {
+    font-family: Helvetica, Arial, sans-serif;
+    line-height: normal;
+}
+
+h1 {
+    font-size: 3.5rem;
+}
+
+h2{
+    font-size: 2.5rem;
+}
+header {
+    /*background-color: blue;*/
+    margin: 30px auto;
+}
+header img {
+    display: block;
+    margin: 10px auto;
+}
+article {
+    margin: 20px auto;
+}
+article img {
+    margin: 20px auto;
+}
+article > header {
+    text-align: center;
+    margin-top: 80px;
+}
+article > header > h1 {
+    margin: 0px auto;
+}
+article > header > p {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size:small;
+    text-transform: uppercase;
+}
+section > blockquote > p{
+    border: 1px solid black; /* Línea izquierda más gruesa de color negro */
+    border-left: 10px solid black; /* Línea izquierda más gruesa de color negro */
+    padding: 20px; /* Espacio interno a la izquierda del bloquequote */
+    color: var(--contrast-color);
+    font-weight: bold;
+    font-size: x-large;
+}
+
+article > footer {
+    margin: 30px auto;
+}
+article > footer > p{
+    font-size: 0.9rem;
+}
+main {
+    font-family: Georgia, 'Times New Roman', serif;
+    /*background-color: green;*/
+}
+
+main p {
+    font-size: 1.1rem;
+}
+
+main img {
+    max-width: 100%;
+    height: auto; 
+}
+
 a {
-    color: rgb(191, 15, 60);
+    color: var(--contrast-color);
     text-decoration: underline;
 }
 
@@ -30,6 +107,8 @@ nav ul {
     list-style-type: none;
     text-align: center;
     padding: 0;
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
 nav ul li {
@@ -37,22 +116,27 @@ nav ul li {
 }
 
 nav ul li a {
-    color: rgb(36, 36, 36);
+    color: var(--main-color);
     text-decoration: none;
 }
 
 nav ul li a:hover {
-    color: rgb(191, 15, 60);
+    color: var(--contrast-color);
 }
 
 nav ul li a.current {
-    font-weight: bold;
-    color: rgb(191, 15, 60);
+    color: var(--contrast-color);
 }
 
 /* Estilos específicos para el pie de página */
+footer{
+    font-family: Helvetica, Arial, sans-serif;
+    font-size:small;
+    /*background-color: yellow;*/
+    margin-top: 60px;
+}
 
-footer {
+body > footer {
     background-color: rgb(0, 0, 0);
     color: rgb(255, 255, 255);
     padding: 20px 0;
@@ -60,25 +144,21 @@ footer {
 
 footer .container {
     text-align: center;
+    line-height: normal;
 }
+
 
 /* Estilos específicos para los títulos */
 
-h1, h2 {
-    color: rgb(191, 15, 60);
-}
+
 
 /* Estilos específicos para los enlaces externos */
 
-.external-link {
-    background-image: url('../img/external-link.svg');
-    background-repeat: no-repeat;
-    background-position: right center;
-    padding-right: 15px;
-}
 
 a[href*="http"] {
     background: url('../img/external-link.svg') no-repeat 100% 0;
     background-size: 16px 16px;
+    background-position: top right;
     padding-right: 19px;
+    display: inline-block;
   }
