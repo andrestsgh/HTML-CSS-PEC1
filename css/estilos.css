@@ -1,12 +1,13 @@
+/* Variables */
 :root {
     --main-color: rgb(36, 36, 36);
     --contrast-color: rgb(191, 15, 60);
 }
-  
-/* Estilos generales */
+
+/* General */
 html {
     font-size: 16px;
-  }
+}
   
 body {
     font-family: Helvetica, Arial, sans-serif;
@@ -16,13 +17,45 @@ body {
     line-height: 1.6;
 }
 
+/* Classes */
 .container {
     width: 95%;
     max-width: 850px;
     margin-left: auto;
-    margin: 0 auto;
+    margin-right: auto;
 }
 
+/* Header */
+header {
+   /* position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Asegura que el encabezado esté por encima de otros elementos */
+
+    margin: 30px auto;
+}
+
+header img {
+    display: block;
+    margin: 10px auto;
+}
+
+/* Main */
+main {
+    font-family: Georgia, 'Times New Roman', serif;
+}
+
+main p {
+    font-size: 1.1rem;
+}
+
+main img {
+    max-width: 100%;
+    height: auto; 
+}
+
+/* Titles */
 h1, h2, h3 {
     font-family: Helvetica, Arial, sans-serif;
     line-height: normal;
@@ -30,37 +63,47 @@ h1, h2, h3 {
 
 h1 {
     font-size: 3.5rem;
+    text-align: center;
 }
 
 h2{
     font-size: 2.5rem;
 }
-header {
-    /*background-color: blue;*/
-    margin: 30px auto;
+
+/* Abbreviatures */
+abbr {
+    text-decoration: none;
 }
-header img {
-    display: block;
-    margin: 10px auto;
+
+/* Lists */
+ul {
+    list-style-type: square;
 }
+
+/* Article */
 article {
     margin: 20px auto;
 }
+
 article img {
-    margin: 20px auto;
+    margin-bottom: 20px;
 }
+
 article > header {
     text-align: center;
-    margin-top: 80px;
+    margin-top: 60px;
 }
+
 article > header > h1 {
     margin: 0px auto;
 }
-article > header > p {
+
+.signature {
     font-family: Helvetica, Arial, sans-serif;
     font-size:small;
     text-transform: uppercase;
 }
+
 section > blockquote > p{
     border: 1px solid black; /* Línea izquierda más gruesa de color negro */
     border-left: 10px solid black; /* Línea izquierda más gruesa de color negro */
@@ -73,36 +116,16 @@ section > blockquote > p{
 article > footer {
     margin: 30px auto;
 }
+
 article > footer > p{
     font-size: 0.9rem;
 }
-main {
-    font-family: Georgia, 'Times New Roman', serif;
-    /*background-color: green;*/
-}
 
-main p {
-    font-size: 1.1rem;
-}
-
-main img {
-    max-width: 100%;
-    height: auto; 
-}
-
-a {
-    color: var(--contrast-color);
-    text-decoration: underline;
-}
-
-a:hover {
-    text-decoration: none;
-}
-
-/* Estilos específicos para el menú de navegación */
+/* Navigation */
 nav{
     text-align: center;
 }
+
 nav ul {
     list-style-type: none;
     text-align: center;
@@ -120,20 +143,42 @@ nav ul li a {
     text-decoration: none;
 }
 
-nav ul li a:hover {
-    color: var(--contrast-color);
-}
-
+nav ul li a:hover,
 nav ul li a.current {
     color: var(--contrast-color);
 }
 
-/* Estilos específicos para el pie de página */
-footer{
+dl > dt {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 1.75rem;
+    font-weight: bold;
+}
+
+dl > dd {
+    border-left: 1px solid black; /* Línea izquierda más gruesa de color negro */
+    padding-left: 16px; /* Agrega un espacio entre la línea y el texto */
+    margin-left: 0; /* Asegura que no haya margen adicional en la izquierda */
+    margin-bottom: 25px;
+    /*margin-top: 0.5em;
+    margin-bottom: 1.5em;*/
+}
+
+dl > dd > p {
+    margin-top: 5px;
+}
+
+/* Footer */
+footer {
     font-family: Helvetica, Arial, sans-serif;
     font-size:small;
-    /*background-color: yellow;*/
     margin-top: 60px;
+    /*
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Asegura que el pie de página esté por encima de otros elementos */
+
 }
 
 body > footer {
@@ -147,18 +192,28 @@ footer .container {
     line-height: normal;
 }
 
+/* Links */
+a {
+    color: var(--contrast-color);
+    text-decoration: underline;
+}
 
-/* Estilos específicos para los títulos */
+a:hover {
+    text-decoration: none;
+}
 
-
-
-/* Estilos específicos para los enlaces externos */
-
-
+/* External links */
 a[href*="http"] {
     background: url('../img/external-link.svg') no-repeat 100% 0;
     background-size: 16px 16px;
     background-position: top right;
     padding-right: 19px;
     display: inline-block;
-  }
+}
+
+.iframe-container {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+    border: none;
+}

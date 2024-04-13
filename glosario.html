@@ -2,73 +2,168 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+
+    <meta property="og:url" content="https://andrestsgh.github.io/HTML-CSS-PEC1/" />
+    <meta property="og:title" content="El iris, ¿el dato biométrico de moda?" />
+    <meta property="og:type" content="website" />
+    <meta property="og:description"
+        content="El auge de las criptomonedas impulsa a jóvenes a vender su iris para obtenerlas, 
+        planteando el debate sobre la privacidad, regulación y uso de estos datos biométricos." />
+    <meta property="og:image" content="https://andrestsgh.github.io/HTML-CSS-PEC1/img/iris.jpg" />
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@andrests" />
+    <meta name="twitter:creator" content="@andrests" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Núria Bigas Formatjé" />
+    <meta name="description"
+        content="El auge de las criptomonedas impulsa a jóvenes a vender su iris para obtenerlas, 
+        planteando el debate sobre la privacidad, regulación y uso de estos datos biométricos." />
+   
     <title>Glosario de Blockchain</title>
     <link rel="stylesheet" href="css/estilos.css">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
 </head>
 <body>
+    <!-- Main header in all pages -->
     <header>
-        <div class="container">
-            <img src="img/bit-logo.png" alt="Bit Logo">
             <nav>
-                <ul>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="criptomonedas.html">Criptomonedas</a></li>
-                    <li><a href="glosario.html" class="current">Glosario</a></li>
-                </ul>
+                <div class="container">
+                    <ul>
+                        <li><a href="index.html"><img src="img/bit-logo.png" alt="Bit Logo" /></a></li>
+                        <li><a href="index.html">Artículo</a></li>
+                        <li><a href="criptomonedas.html">Criptomonedas</a></li>
+                        <li><a href="glosario.html" class="current">Glosario</a></li>
+                    </ul>
+                </div>
             </nav>
-        </div>
     </header>
 
-    <main>
-        <section>
-            <h1>Terminología del Blockchain</h1>
-            <article>
-                <h2>Cifrado</h2>
-                <p>Es un mecanismo de seguridad que permite modificar un mensaje para que su contenido sea ilegible. En criptografía el cifrado es el proceso de codificación de la información. Este proceso convierte la representación original d la información, conocida como texto plano, en una forma alternativa conocida como texto cifrado.</p>
-            </article>
-
-            <article>
-                <h2>Criptomoneda o criptodivisa</h2>
-                <p>Una criptomoneda es un tipo de moneda digital basada en la criptografía para encadenar las firmas digitales de transferencias simbólicas, redes de igual a igual (peer-to-peer) y la descentralización. En algunos casos se usa el esquema prueba de trabajo para crear y administrar la moneda.</p>
-            </article>
-
-            <article>
-                <h2>Bitcoin</h2>
-                <p>Es una tecnología, una red y a la vez una criptomoneda descentralizada creada por un autor anónimo de pseudónimo Satoshi Nakamoto. La moneda está subdividida en 100 millones de unidades más pequeñas llamadas satoshis. Es la moneda alternativa más usada con un mercado total (a junio del 2020) de 175.000 millones de USD.</p>
-            </article>
-
-            <article>
-                <h2>Ethereum</h2>
-                <p>Ethereum es una plataforma de software de computación distribuida basada en blockchain y que es distingue por la funcionalidad de contratos inteligentes. Ethereum es de código abierto y provee de una máquina virtual de tipo Turing completo, la Máquina Virtual Ethereum (EVM), y que puede ejecutar código de software en una red de nodos públicos. Ethereum fue definida por Vitalik Buterin en 2013 y después (2014) se desarrolló a través de la compañía suiza Ethereum Switzerland GmbH y la fundación sin ánimo de lucro Ethereum Foundation. En 2017 se creó la alianza Enterprise Ethereum Alliance con más de 30 miembros, actualmente son más de 150 miembros.</p>
-            </article>
-
-            <article>
-                <h2>Mineros y minería digital</h2>
-                <p>Se conoce como minería, minado o extracción de bitcoins a la generación de nuevos bloques para la red Bitcoin, por analogía con la minería del oro. La construcción de la cadena de bloques se hace mediante esta actividad, que permite mantener una red de igual a igual basada en la tecnología blockchain actualizada y segura.</p>
-            </article>
-
-            <article>
-                <h2>Nodos</h2>
-                <p>Una red blockchain necesita un conjunto de ordenadores para almacenar las transacciones. Los equipos que componen la red se llaman nodos. En una cadena de bloques, cada nodo tiene un registro completo de los datos que se han almacenado en la cadena de bloques.</p>
-            </article>
-
-            <article>
-                <h2>ICO</h2>
-                <p>Una oferta inicial de criptomonedas (ICO) es un tipo de financiación usando criptomonedas. Mayoritariamente el proceso se lleva a cabo mediante un micromecenazgo, pero las ICO privadas se están convirtiendo en muy habituales. En una ICO, las criptomonedas son vendidas en forma de tokens a especuladores o inversores a cambio de dinero tradicional u otras criptomonedas como Bitcoin o Ethereum. Los tokens son vendidos como futuras unidades de la moneda cuando el ICO llegue a su objetivo y el proyecto se lance.</p>
-            </article>
-
-            <article>
-                <h2>Bifurcaciones o forks</h2>
-                <p>Se conoce como bifurcación (en inglés fork) en el contexto de les criptomonedas a un ajuste de las reglas de consenso de una red blockchain que puede o no producir una división. Estos acontecimientos suelen ser medios para ejecutar actualizaciones y crear criptomonedas a partir de una criptomoneda preexistente, aunque también pueden pasar como consecuencia de errores de código del software para nodos mineros y/o validadores. No se debe confundir la acepción de la misma palabra en el ámbito del desarrollo de software, que se refiere a la acción de copiar código(generalmente de proyectos de código abierto) como base para crear un nuevo proyecto o ramificación del proyecto original.</p>
-            </article>
-        </section>
+    <!-- Main content -->
+    <main class="container">
+        <article>
+            <h1>Terminología del <i lang="en">Blockchain</i></h1>
+            <dl>
+                <dt>Cifrado</dt>
+                <dd>
+                    <p>
+                        Es un mecanismo de seguridad que permite modificar un mensaje para que su contenido sea ilegible. 
+                        En criptografía el <strong>cifrado</strong> es el proceso de codificación de la información. Este proceso convierte 
+                        la representación original de la información, conocida como texto plano, en una forma alternativa 
+                        conocida como texto cifrado.
+                    </p>
+                </dd>
+                <dt>Criptomoneda o criptodivisa</dt>
+                <dd>
+                    <p>
+                        Una <strong>criptomoneda</strong> es un tipo de moneda digital basada en la criptografía para encadenar las firmas 
+                        digitales de transferencias simbólicas, redes de igual a igual (<i lang="en">peer-to-peer</i>) y la descentralización. 
+                        En algunos casos se usa el esquema prueba de trabajo para crear y administrar la moneda.
+                    </p>
+                </dd>
+                <dt>Bitcoin</dt>
+                <dd>
+                    <p>
+                        Es una tecnología, una red y a la vez una criptomoneda descentralizada creada por un autor anónimo 
+                        de pseudónimo <span class="person">Satoshi Nakamoto</span>. La moneda está subdividida en 100 millones de unidades más pequeñas 
+                        llamadas <strong><i>satoshis</i></strong>. Es la moneda alternativa más usada con un mercado total (a <time datetime="2020-06">junio del 2020</time>) 
+                        de 175.000 millones de <abbr title="United States Dollar">USD</abbr>.
+                    </p>
+                    <p>
+                        En vez de ser creados por una entidad central, la red de igual a igual de <strong>bitcoin</strong> regula la creación e intercambio 
+                        de <strong>bitcoins</strong> según el software de la misma red. Hay nodos que se dedican a crear y a verificar bitcoins mediante 
+                        operaciones matemáticas que requieren gran capacidad de potencia de cálculo. Está establecido que no habrá más de 
+                        21 millones de <strong>bitcoins</strong>, cifra a la que se calcula que se llegará en el año <time datetime="2140">2140</time>.
+                    </p>
+                </dd>
+                <dt>Ethereum</dt>
+                <dd>
+                    <p>
+                        <strong>Ethereum</strong> es una plataforma de software de computación distribuida basada en <i lang="en">blockchain</i> y que se 
+                        distingue por la funcionalidad de contratos inteligentes. <strong>Ethereum</strong> es de código abierto y provee de una máquina 
+                        virtual de tipo Turing completo, la Máquina Virtual Ethereum (EVM), y que puede ejecutar código de software en una
+                        red de nodos públicos. <strong>Ethereum</strong> fue definida por <span class="person">Vitalik Buterin</span> en <time datetime="2013">2013</time> y 
+                        después (<time datetime="2014">2014</time>) se desarrolló a través de la compañía suiza <span class="company">Ethereum Switzerland <abbr title="Sociedad de Responsabilidad Limitada">GmbH</abbr></span> y la 
+                        fundación sin ánimo de lucro <span class="company">Ethereum Foundation</span>. En <time datetime="2017">2017</time> se creó la alianza <span class="company">Enterprise Ethereum Alliance</span> con más de 
+                        30 miembros, actualmente son más de 150 miembros.
+                    </p>
+                    <p>
+                        La criptomoneda <strong>Ethereum</strong> y la plataforma en la que se basa se desarrollaron tan rápidamente que muchos expertos la vieron 
+                        como un serio competidor de Bitcoin.
+                    </p>
+                </dd>
+                <dt>Mineros y minería digital</dt>
+                <dd>
+                    <p>
+                        Se conoce como <strong>minería</strong>, minado o extracción de bitcoins a la generación de nuevos bloques para la red Bitcoin, 
+                        por analogía con la minería del oro.
+                    </p>
+                    <p>
+                        La construcción de la cadena de bloques se hace mediante esta actividad, que permite mantener una red de igual 
+                        a igual basada en la tecnología <i lang="en">blockchain</i> actualizada y segura.
+                    </p>
+                    <p>
+                        Todos los <strong>mineros</strong> de la red compiten por ser los primeros en encontrar la solución al problema criptográfico de su bloque 
+                        candidato actual, mediante un sistema de pruebas de trabajo, resolviendo un problema que requiere diversos intentos 
+                        repetitivos, por fuerza bruta, no determinista, de manera que se evita que <strong>mineros</strong> con gran nivel de procesamiento dejen 
+                        fuera a los más pequeños. De este modo, la frecuencia de localización de cada bloque sigue una distribución de <span class="person">Poisson</span> 
+                        y la probabilidad de que un <strong>minero</strong> lo encuentre depende del poder computacional con el que contribuya a la red en relación 
+                        con el poder computacional de todos los nodos combinados, lo que permite que el sistema funcione de modo descentralizado.
+                    </p>
+                    <p>
+                        Cuando un <strong>minero</strong> encuentra la solución al problema criptográfico del bloque, lo transmite al resto de los nodos a los que 
+                        está conectado. En caso de que este bloque sea válido de acuerdo con las normas de consenso (la validación de la solución 
+                        proporcionada por el <strong>minero</strong> es un proceso trivial y se realiza inmediatamente), estos nodos lo añaden a la cadena y 
+                        retransmiten. Este proceso se repite indefinidamente hasta que el bloque ha alcanzado todos los nodos de la red.
+                    </p>
+                    <p>
+                        Para que un bloque sea válido, el <strong>minero</strong> que lo produjo debe incluir como referencia en la cabecera de este el 
+                        <i lang="en">hash</i> o resumen criptográfico del último bloque de la cadena más larga de la que tengan conocimiento.
+                    </p>
+                </dd>
+                <dt>Nodos</dt>
+                <dd>
+                    <p>
+                        Una red <i lang="en">blockchain</i> necesita un conjunto de ordenadores para almacenar las transacciones. Los equipos que componen 
+                        la red se llaman <strong>nodos</strong>. En una cadena de bloques, cada <strong>nodo</strong> tiene un registro completo de los datos que se han 
+                        almacenado en la cadena de bloques.
+                    </p>
+                </dd>
+                <dt>ICO</dt>
+                <dd>
+                    <p>
+                        Una oferta inicial de criptomonedas (<strong>ICO</strong>) es un tipo de financiación usando criptomonedas. Mayoritariamente el 
+                        proceso se lleva a cabo mediante un micromecenazgo, pero las <abbr title="Oferta Inicial de Criptomonedas"><strong>ICO</strong></abbr> privadas se están convirtiendo en muy habituales. 
+                        En una <abbr title="Oferta Inicial de Criptomonedas"><strong>ICO</strong></abbr>, las criptomonedas son vendidas en forma de <i lang="en">tokens</i> a especuladores o inversores a cambio de dinero 
+                        tradicional u otras criptomonedas como Bitcoin o Ethereum. Los <i lang="en">tokens</i> son vendidos como <i>futuras</i> unidades de la 
+                        moneda cuando el <abbr title="Oferta Inicial de Criptomonedas"><strong>ICO</strong></abbr> llegue a su objetivo y el proyecto se lance.
+                    </p>
+                </dd>
+                <dt>Bifurcaciones o forks</dt>
+                <dd>
+                    <p>
+                        Se conoce como <strong>bifurcación</strong> (en inglés <i lang="es">fork</i>) en el contexto de les criptomonedas a un ajuste de las reglas de 
+                        consenso de una red <i lang="en">blockchain</i> que puede o no producir una división. Estos acontecimientos suelen ser medios 
+                        para ejecutar actualizaciones y crear criptomonedas a partir de una criptomoneda preexistente, aunque también 
+                        pueden pasar como consecuencia de errores de código del software para nodos mineros y/ o validadores. No se debe 
+                        confundir la acepción de la misma palabra en el ámbito del desarrollo de software, que se refiere a la acción de 
+                        copiar código (generalmente de proyectos de código abierto) como base para crear un nuevo proyecto o ramificación 
+                        del proyecto original.
+                    </p>
+                </dd>
+            </dl>
+            <footer>
+                <p>Elaborado a partir de definiciones de la <a href="https://www.wikipedia.org" target="_blank">Wikipedia</a>
+                </p>
+            </footer>
+        </article>
     </main>
-
+    <!-- Main Footer -->
     <footer>
         <div class="container">
-            <p>Nombre del estudiante</p>
-            <p>Asignatura</p>
+            <p>2024 &copy; Andrés Terol Sánches</p>
+            <p>Asignatura HTML y CSS</p>
         </div>
     </footer>
 </body>
