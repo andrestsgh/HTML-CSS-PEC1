@@ -76,8 +76,19 @@ abbr {
 }
 
 /* Lists */
+ol {
+    font-size: 1.8rem;
+    margin: 10px;
+}
 ul {
     list-style-type: square;
+    font-size: 1.1rem;
+    margin: 15px auto;
+    margin-left: 10px;
+}
+
+ol > li > ul > li {
+    margin: 8px auto;
 }
 
 /* Article */
@@ -92,6 +103,10 @@ article img {
 article > header {
     text-align: center;
     margin-top: 60px;
+}
+
+article > header > p {
+    font-size: x-large;
 }
 
 article > header > h1 {
@@ -165,6 +180,14 @@ dl > dd {
 
 dl > dd > p {
     margin-top: 5px;
+}
+figure {
+    margin: 0;
+}
+figure > figcaption {
+    font-size: 0.7rem;
+    text-align: center;
+    margin: 10px auto;
 }
 
 /* Footer */
