@@ -29,7 +29,7 @@ body {
 
 /* Header Page */
 header {
-    margin-top: 30px;
+    margin-top: 1.875em; /* 30px/16px=1.875em */
 }
 
 header img {
@@ -49,7 +49,7 @@ main p {
 main img {
     max-width: 100%;
     height: auto; 
-    margin: 20px auto;
+    margin: 1.25em auto; /* 20px/16px=1.25em */
 }
 
 /* Titles */
@@ -75,25 +75,25 @@ abbr {
 /* Lists */
 ol {
     font-size: 1.8rem;
-    margin: 10px;
+    margin: 0.625em; /* 10px/16px=0.625em */
 }
 ul {
     list-style-type: square;
-    margin: 10px auto;
+    margin: 0.625em auto; /* 10px/16px=0.625em */
 }
 
 ol > li > ul {
-    margin-left: 10px;
+    margin-left: 0.625em; /* 10px/16px=0.625em */
     font-size: 1.1rem;
 }
 
 ol > li > ul > li {
-    margin: 10px auto;
+    margin: 0.625em auto; /* 10px/16px=0.625em */
 }
 
 /* Article */
 article {
-    margin: 20px auto;
+    margin: 1.25em auto; /* 20px/16px=1.25em */
 }
 
 article > header {
@@ -102,24 +102,24 @@ article > header {
 
 article > header > p {
     font-size: x-large;
-    margin-top: 60px;
+    margin-top: 2em; /* 32px/16px=2em */
 }
 
 article > header > h1 {
-    margin: 0px auto;
+    margin: 0 auto;
 }
 
 section > blockquote > p{
     border: 1px solid black;
     border-left: 10px solid black;
-    padding: 20px;
+    padding: 1.25em; /* 20px/16px=1.25em */
     color: var(--contrast-color);
     font-weight: bold;
     font-size: x-large;
 }
 
 article > footer {
-    margin: 30px auto;
+    margin: 1.875em auto; /* 30px/16px=1.875em */
 }
 
 article > footer > p {
@@ -129,7 +129,7 @@ article > footer > p {
 /* Navigation */
 nav{
     text-align: center;
-    margin-bottom: 65px;
+    margin-bottom: 4em; /* 64px/16px=4em */
 }
 
 nav ul {
@@ -159,13 +159,13 @@ dl > dt {
 
 dl > dd {
     border-left: 1px solid black;
-    padding-left: 16px;
+    padding-left: 1em; /* 16px/16px=1em */
     margin-left: 0;
-    margin-bottom: 25px;
+    margin-bottom: 1.563em; /* 25px/16px=1.563em */
 }
 
 dl > dd > p {
-    margin-top: 5px;
+    margin-top: 0.313em; /* 5px/16px=0.313em */
 }
 
 /* Figures */
@@ -176,20 +176,20 @@ figure {
 figure > figcaption {
     font-size: 0.7rem;
     text-align: center;
-    margin: 10px auto;
+    margin: 0.625em auto; /* 10px/16px=0.625em */
 }
 
 /* Footer Page */
 footer {
     font-family: var(--font-sans-serif);
     font-size:small;
-    margin-top: 60px;
+    margin-top: 3.75em; /* 60px/16px=3.75em */
 }
 
 body > footer {
     background-color: rgb(0, 0, 0);
     color: rgb(255, 255, 255);
-    padding: 20px 0;
+    padding: 1.25em 0; /* 20px/16px=1.25em */
 }
 
 footer .container {
@@ -212,7 +212,7 @@ a[href*="http"] {
     background: url('../img/external-link.svg') no-repeat 100% 0;
     background-size: 16px 16px;
     background-position: top right;
-    padding-right: 19px;
+    padding-right: 1.188em; /* 19px/16px=1.188em */
     display: inline-block;
 }
 
@@ -229,5 +229,5 @@ article .signature {
     font-family: var(--font-sans-serif);
     font-size:small;
     text-transform: uppercase;
-    margin: 10px auto;
+    margin: 0.625em auto; /* 10px/16px=0.625em */
 }
