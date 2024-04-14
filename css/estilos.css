@@ -29,12 +29,12 @@ body {
 
 /* Header Page */
 header {
-    margin: 30px auto;
+    margin-top: 30px;
 }
 
 header img {
     display: block;
-    margin: 10px auto;
+    margin: auto;
 }
 
 /* Main Page */
@@ -49,6 +49,7 @@ main p {
 main img {
     max-width: 100%;
     height: auto; 
+    margin: 20px auto;
 }
 
 /* Titles */
@@ -78,13 +79,16 @@ ol {
 }
 ul {
     list-style-type: square;
-    font-size: 1.1rem;
-    margin: 15px auto;
+    font-size: large;
+    margin: 10px auto;
+}
+
+ol > li > ul {
     margin-left: 10px;
 }
 
 ol > li > ul > li {
-    margin: 8px auto;
+    margin: 10px auto;
 }
 
 /* Article */
@@ -92,13 +96,9 @@ article {
     margin: 20px auto;
 }
 
-article img {
-    margin-bottom: 20px;
-}
-
 article > header {
     text-align: center;
-    margin-top: 60px;
+    margin-top: 65px;
 }
 
 article > header > p {
@@ -137,10 +137,6 @@ nav ul {
     padding: 0;
     text-transform: uppercase;
     font-weight: bold;
-}
-
-nav ul li {
-    margin-right: 20px;
 }
 
 nav ul li a {
