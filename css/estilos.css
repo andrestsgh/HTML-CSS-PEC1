@@ -79,12 +79,12 @@ ol {
 }
 ul {
     list-style-type: square;
-    font-size: large;
     margin: 10px auto;
 }
 
 ol > li > ul {
     margin-left: 10px;
+    font-size: 1.1rem;
 }
 
 ol > li > ul > li {
@@ -98,11 +98,11 @@ article {
 
 article > header {
     text-align: center;
-    margin-top: 65px;
 }
 
 article > header > p {
     font-size: x-large;
+    margin-top: 60px;
 }
 
 article > header > h1 {
@@ -129,6 +129,7 @@ article > footer > p {
 /* Navigation */
 nav{
     text-align: center;
+    margin-bottom: 65px;
 }
 
 nav ul {
@@ -228,4 +229,5 @@ article .signature {
     font-family: var(--font-sans-serif);
     font-size:small;
     text-transform: uppercase;
+    margin: 10px auto;
 }
